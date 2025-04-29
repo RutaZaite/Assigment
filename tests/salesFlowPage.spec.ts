@@ -1,6 +1,6 @@
 
 import {test} from '@playwright/test';
-import { HomePage } from '../pages/HomePage2';
+import { HomePage } from '../pages/HomePage';
 import { BerekenenPage } from '../pages/berekenenPage';
 import { AanbodPage } from '../pages/aanbodPage';
 import { GegevensPage } from '../pages/gevenesPage';

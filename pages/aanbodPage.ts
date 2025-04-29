@@ -4,7 +4,6 @@ import { BasePage } from './basePage';
 export class AanbodPage extends BasePage {
     protected page: Page;
     protected basePage: BasePage;
-    public url: string;
   
    
     readonly TO_OFFER: string = '[data-label="Naar je aanbod"]';
@@ -14,7 +13,6 @@ export class AanbodPage extends BasePage {
     constructor(page: Page) {
       super(page);
       this.page = page;
-      this.url =this.url = 'https://www.eneco.nl/'
       this.basePage = new BasePage(page);
     }
     public async clickToOffer(): Promise<void> {

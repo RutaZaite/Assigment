@@ -4,7 +4,6 @@ import { BasePage } from './basePage';
 export class ControlePage extends BasePage {
     protected page: Page;
     protected basePage: BasePage;
-    public url: string;
   
     readonly IBAN_INPUT: string = 'input[name="iban"]';
    
@@ -12,7 +11,6 @@ export class ControlePage extends BasePage {
      constructor(page: Page) {
       super(page);
       this.page = page;
-      this.url =this.url = 'https://www.eneco.nl/'
       this.basePage = new BasePage(page);
     }
     public async fillInIban(iban: string): Promise<void> {
