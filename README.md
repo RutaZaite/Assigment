@@ -1,6 +1,6 @@
  # SalesFlow Tests
 
- This project contains automated tests for the SalesFlow application, written with Playwright.
+ This project contains automated tests for the SalesFlow application, written with Playwright with workflow implementation via GithubActions.
 
  ## Installation
 
@@ -19,6 +19,22 @@
  ```bash
  npx playwright test --ui
  ```
+
+  ## Workflow implementation:
+
+The Playwright test pipeline is designed to automatically execute tests upon any push or pull request to the `main` or `master` branches. It can also be manually triggered via the **Actions** tab in GitHub.
+
+#### Workflow Summary:
+1. **Repository Checkout:** The latest code is retrieved from the repository.
+2. **Node.js Setup:** The pipeline configures Node.js with the latest LTS version.
+3. **Dependency Installation:** Runs `npm ci` to ensure all required dependencies are installed.
+4. **Playwright Browser Installation:** Ensures necessary browsers are available for testing.
+5. **Test Execution:** Runs Playwright tests using `npx playwright test`.
+6. **Artifact Storage:** If the workflow is not canceled, test reports are saved for later review.
+
+#### Current Issue:
+The test suite functions correctly in a local environment. However, when executed within the pipeline, an issue arises specifically when filling in an IBAN field. Due to time constraints, thorough debugging within the pipeline has not yet been conducted.
+
 
 ## Structure
 ### The tests are organized into different page objects:
@@ -106,3 +122,4 @@ Ensure you have the following configurations set up:
 ## Prerequisites
 - Internet access to reach the Eneco website.
 - Valid credentials if authentication is required for certain tests.
+
