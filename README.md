@@ -55,6 +55,7 @@ Key Features:
 Element interactions: Click, fill, and wait for elements.
 Cookie handling: Automatically accepts cookies.
 Smart waiting: Ensures elements are ready before interacting.<br>
+
 **ControlPage**:The ControlePage class provides a foundation for all page objects in the project, promoting code reuse and consistency.
 Key Features:
 Element interactions: Click, fill, and wait for elements.
@@ -69,5 +70,5 @@ The SalesFlow suite contains tests that simulate the entire sales flow.
 
 
 ## Testplan 
-You can find in Testplan/Testplan.xlsx
+Assignments 1 and 2 can be found in Testplan Testplan/Testplan.xlsx
 
