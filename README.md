@@ -70,5 +70,5 @@ The SalesFlow suite contains tests that simulate the entire sales flow.
 
 
 ## Testplan 
-Assignments 1 and 2 can be found in Testplan Testplan/Testplan.xlsx
-
+Assignments 1 and 2 can be found in 
+[Testplan](./Testplan/Testplan.md)
